@@ -1,0 +1,25 @@
+public class OverRiding {
+    class Info {
+        int age = 20;
+        String pname = "Uday Kumar";
+
+        {
+            System.out.println("Name: " + pname);
+            System.out.println("Age: " + age);
+        }
+    }
+    class Derived extends Info {
+        int age = 21;
+        String pname = "Naveen";
+
+        {
+            System.out.println("Name: " + pname);
+            System.out.println("Age: " + age);
+        }
+    }
+    public static void main(String[] args) {
+        OverRiding outer = new OverRiding();
+        Info base = outer.new Info();
+        Derived derived = outer.new Derived();
+    }
+}
