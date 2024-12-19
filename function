@@ -1,0 +1,15 @@
+public class homework {
+    public void add(int a,int b)
+    {
+        int  c;
+        c = a+b;
+        System.out.println("sum of two numbers : "+c);
+    }
+    public static void main(String[] ar)
+    {
+        int a=5;
+        int b= 5;
+        homework number = new homework();
+        number.add(a,b);
+    }
+}
