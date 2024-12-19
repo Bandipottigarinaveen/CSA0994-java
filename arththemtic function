@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class function {
+    int add()
+        {
+            int a,b,c;
+            a=5;
+            b=7;
+            c=a+b;
+           return c;
+        }
+    int sub()
+    {
+        int a,b,c;
+        a=5;
+        b=7;
+        c=a-b;
+        return c;
+    }
+    int mul() {
+        int a, b, c;
+        a = 5;
+        b = 7;
+        c = a * b;
+        return c;
+    }
+    int div() {
+        int a, b, c;
+        a = 5;
+        b = 7;
+        c = a/b;
+        return c;
+    }
+        public static void main(String[] ar)
+        {
+            function p = new function();
+           int x= p.add();
+           int y= p.sub();
+           int z= p.mul();
+           int v= p.div();
+           System.out.println("sum:"+x+"sub:"+y+"mul:"+z+"division:"+v);
+
+        }
+}
