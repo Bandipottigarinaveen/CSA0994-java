@@ -1,0 +1,29 @@
+public class Overloading {
+    class Info {
+        int age;
+        String pname;
+
+        void setValues(int age, String pname) {
+            this.age = age;
+            this.pname = pname;
+            System.out.println("Base: " + pname + ", " + age);
+        }
+    }
+
+    class Derived extends Info {
+        @Override
+        void setValues(int age, String pname) {
+            this.age = age + 5;
+            this.pname = pname ;
+            System.out.println("Derived: " + this.pname + ", " + this.age);
+        }
+    }
+
+    public static void main(String[] args) {
+        Overloading outer = new Overloading();
+        Info base = outer.new Info();
+        base.setValues(25, "Uday Kumar");
+        Info derivedAsBase = outer.new Derived();
+        derivedAsBase.setValues(30, "Naveen");
+    }
+}
