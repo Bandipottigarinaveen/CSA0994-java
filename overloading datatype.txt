@@ -1,0 +1,25 @@
+public class Overloading {
+
+    void setValues(int age, String pname) {
+        System.out.println("Method 1 - Parameters: int, String");
+        System.out.println("Name: " + pname + ", Age: " + age);
+    }
+
+    void setValues(double salary, String pname) {
+        System.out.println("Method 2 - Parameters: double, String");
+        System.out.println("Name: " + pname + ", Salary: " + salary);
+    }
+
+    void setValues(String pname, int age) {
+        System.out.println("Method 3 - Parameters: String, int");
+        System.out.println("Name: " + pname + ", Age: " + age);
+    }
+
+    public static void main(String[] args) {
+        Overloading obj = new Overloading();
+
+        obj.setValues(25, "Uday Kumar");
+        obj.setValues(50000.50, "Naveen");
+        obj.setValues("Alice", 30);
+    }
+}

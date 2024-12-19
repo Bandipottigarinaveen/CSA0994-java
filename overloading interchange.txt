@@ -1,0 +1,16 @@
+public class Overloading {
+    void setValues(int age, String pname) {
+        System.out.println("Method 1 - Order: int first, String second");
+        System.out.println("Name: " + pname + ", Age: " + age);
+    }
+    void setValues(String pname, int age) {
+        System.out.println("Method 2 - Order: String first, int second");
+        System.out.println("Name: " + pname + ", Age: " + age);
+    }
+
+    public static void main(String[] args) {
+        Overloading obj = new Overloading();
+        obj.setValues(25, "Uday Kumar");
+        obj.setValues("Naveen", 30);
+    }
+}
