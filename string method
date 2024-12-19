@@ -1,0 +1,14 @@
+public class java {
+    public static void main(String[] ar)
+    {
+        String s=" hello world";
+
+        System.out.println(s.isBlank());
+        System.out.println(s.isEmpty());
+        System.out.println(s.toLowerCase());
+        System.out.println(s.toUpperCase());
+        int g=s.length();
+        System.out.println(g);
+        System.out.println(s.substring(2,8));
+    }
+}
