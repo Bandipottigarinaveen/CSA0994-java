@@ -1,0 +1,7 @@
+public class Constant {
+    public static void main(String[] ar)
+    {
+        final int a = 5;
+        System.out.println("Constant value : "+a);
+    }
+}
