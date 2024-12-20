@@ -1,0 +1,12 @@
+import java.util.Arrays;
+public class array {
+    public static void main(String[] ar)
+    {
+        int a[]={1,2,34,5};
+        int b[]={1,4,5,6};
+        int c= Arrays.compare(a,b);
+        int d= Arrays.mismatch(a,b);
+        System.out.println(c);
+        System.out.println(d);
+    }
+}

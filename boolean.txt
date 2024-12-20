@@ -1,0 +1,8 @@
+public class bool {
+    public static void main(String[] ar)
+    {
+        System.out.println(true&&true);
+        System.out.println(false&&true);
+        System.out.println(false&&false);
+    }
+}

@@ -1,0 +1,11 @@
+public class type {
+    public static void main(String[] ar)
+    {
+        int a=5;
+        long b=10;
+        String s="15";
+        System.out.println((long)a);
+        System.out.println((int)b);
+        System.out.println((Integer.parseInt(s)));
+    }
+}

@@ -1,0 +1,19 @@
+public class switchcase {
+    public static void main(String[] ar) {
+        String s = "Hello";
+        char ch = s.charAt(0);
+        switch(ch) {
+            case 'H':
+                System.out.println("1st selected");
+                break;
+            case 'e':
+                System.out.println("2nd selected");
+                break;
+            case 'l':
+                System.out.println("3rd selected");
+                break;
+            default:
+                System.out.println("Something wrong");
+        }
+    }
+}
